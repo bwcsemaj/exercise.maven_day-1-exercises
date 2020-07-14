@@ -9,11 +9,11 @@ import org.junit.Test;
  */
 public class GetGradeTest {
     // given
-    private void test(Double score, Character expectation) {
+    private void test(Double score, char expectation) {
         GradeEvaluator gradeEvaluator = new GradeEvaluator();
 
         // when
-        Boolean actual = gradeEvaluator.isGradeA(score);
+        char actual = gradeEvaluator.getGrade(score);
 
         // then
         Assert.assertEquals(actual, expectation);
